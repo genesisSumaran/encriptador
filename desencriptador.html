@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desencriptador de Textos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <video class="background-video" autoplay muted loop>
+      <source src="video2.mp4" type="video/mp4" />
+      Tu navegador no soporta videos, mi reina 💋
+    </video>
+
+    <header>
+      <h1>Desencriptador de Textos</h1>
+    </header>
+
+    <div class="main-content">
+      <div class="entrada">
+        <label for="inputText">Introduce el texto encriptado aquí:</label>
+        <textarea id="inputText" readonly></textarea>
+      </div>
+
+      <div class="proceso">
+        <button onclick="desencriptarTexto()">Desencriptar</button>
+      </div>
+
+      <div class="salida">
+        <label for="outputMessage">Texto desencriptado:</label>
+        <textarea
+          id="outputMessage"
+          readonly
+          placeholder="Mensaje desencriptado aparecerá aquí..."
+        ></textarea>
+      </div>
+      <button onclick="irAEncriptador()">Ir al Encriptador</button>
+
+    </div>
+
+    <footer>
+      <p>&copy; Página hecha por "Brillantitas"</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
